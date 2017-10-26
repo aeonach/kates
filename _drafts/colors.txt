@@ -1,0 +1,9 @@
+$katesgreen: 	#6fa94c;
+$katesblue: 	#3b68af;
+$katespurple: 	#8c5ca0;
+$katesorange: 	#d35c2a;
+$katesyellow: 	#f9e63b;
+$lightgrey: 	#fafafa; (light backgrounds/text)
+$darkgrey:		#333333; (dark backgrounds/text)
+
+
