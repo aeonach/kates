@@ -9,13 +9,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Yanone+Kaffeesatz');
 
-$color-one: #333333;
-$color-two: #fff;
-$color-three: #ffe401;
-$color-four: #f3f2f2;
-$color-five: #fde30a;
-$color-six: #fca43a;
-$color-seven: 
+$kates-green: 	#6fa94c;
+$kates-blue: 	#3b68af;
+$kates-purple: 	#8c5ca0;
+$kates-orange: 	#d35c2a;
+$kates-yellow: 	#f9e63b;
+$light-grey: 	#fafafa; /*(light backgrounds/text) */
+$dark-grey:		#333333; /*(dark backgrounds/text) */
+$pure-white: 	#ffffff;
+$pure-black:	#000000;
+$pintrest-hover: #df2b36
 
 /*========================
 =======Typography=========
@@ -24,8 +27,8 @@ $color-seven:
 body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 18px;
-  color: #333333;
-  background-color: #fff;
+  color: $dark-grey;
+  background-color: $pure-white;
   font-weight:300;
 }
 
@@ -44,7 +47,7 @@ ul {
 }
 
 a {
-  color: #fff;
+  color: $pure-white;
   text-decoration: none;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
@@ -56,7 +59,7 @@ a:focus,
 a:hover {
   text-decoration: none;
   outline: none;
-  color: #ffe401;
+  color: $kates-yellow;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -71,7 +74,7 @@ section {
 	overflow:hidden;
 }
 .default-bg {	
-	background-color:#ffe401;
+	background-color:$kates-yellow;
 }
 
 .entry-header {
@@ -91,11 +94,11 @@ textarea {
 .navbar-toggle {
 	margin-top:19px;
 	margin-right:20px;
-	border:1px solid #fff;
+	border:1px solid $pure-white;
 }
 
 .navbar-toggle .icon-bar {
-	background-color:#fff;
+	background-color:$pure-white;
 }
 
 
@@ -116,7 +119,7 @@ height:44px;
 }
 
 #navigation .navbar-fixed-top {
-	background-color:#f3f2f2;
+	background-color:$light-grey;
 	opacity:0.9;
 }
 
@@ -133,14 +136,14 @@ height:44px;
 #navigation .navbar-right li a:hover, 
 #navigation .navbar-right li a:focus, 
 #navigation .navbar-right li.active a  {
-	color:#fff;	
+	color:$pure-white;	
 }
 
 .navbar-right li.active:before {
 	position:absolute;
 	content:"";
 	height:3px;
-	background-color:#fde30a;
+	background-color:$kates-yellow;
 	bottom:-2px;
 	left:0;
 	right:0;
@@ -151,14 +154,14 @@ height:44px;
 	position:absolute;
 	content:"";
 	height:3px;
-	background-color:#fca43a;
+	background-color:$kates-orange;
 	bottom:-5px;
 	left:0;
 	right:0;
 }
 
 .navbar-right li a.border:before {
-	color: #E3E3E3;
+	color: $light-grey;
 	content: "|";
 	font-size: 12px;
 	position:absolute;
@@ -175,11 +178,11 @@ height:44px;
 #main-carousel h2 {
 	font-size:102px;
 	font-weight:700;
-	color:#ffe401;
+	color:$kates-yellow;
 }
 
 #main-carousel h2 span {
-	color:#fff;
+	color:$pure-white;
 	font-weight:700;
 }
 
@@ -198,9 +201,9 @@ height:44px;
 }
 
 .carousel-caption i {
-	background-color: #FFE401;
+	background-color: $kates-yellow;
 	border-radius: 50%;
-	color: #242525;
+	color: $dark-grey;
 	font-size: 48px;
 	font-weight: 400;
 	height: 62px;
@@ -228,7 +231,7 @@ height:44px;
 }
 
 #main-carousel .carousel-indicators .active {
-	background-color:#ffe401;
+	background-color:$kates-yellow;
 }
 
 
@@ -239,7 +242,7 @@ height:44px;
 ===========================*/
 
 #services {
-	background-color: #FFFFFF;
+	background-color: $pure-white;
 	padding-bottom: 75px;
 }
 
@@ -275,7 +278,7 @@ height:44px;
 }
 
 .service-icon i{
-	color: #FFE401;
+	color: $kates-yellow;
 	font-size: 60px;
 	margin-right: 40px !important;
 }
@@ -293,8 +296,8 @@ height:44px;
 }
 
 .single-service:hover .single-service-icon {
-	background-color:#333333;
-	color: #FFE401;
+	background-color:$dark-grey;
+	color: $kates-yellow;
 }
 
 .single-service-icon, 
@@ -312,8 +315,8 @@ height:44px;
 }
 
 .single-service-icon {
-	background-color: #FFE401;
-	color: #333333;
+	background-color: $kates-yellow;
+	color: $dark-grey;
 	font-size: 72px;
 	padding: 7px 0;
 	text-align: center;
@@ -341,7 +344,7 @@ height:44px;
 ========About Us CSS========
 ===========================*/
 .about-bg {
-	background-color: #1e1e1e;
+	background-color: $dark-grey;
 	height: 275px;
 	overflow: hidden;
 	position: absolute;
@@ -412,7 +415,7 @@ height:44px;
 }
 
 .single-member h3 {
-	color: #0C0C0C;
+	color: $kates-orange;
 	font-size: 36px;
 	font-weight: 300;
 	text-transform:capitalize;
@@ -433,7 +436,7 @@ height:44px;
 }
 
 .overlay  ul li a {	
-	color: #FFFFFF;
+	color: $pure-white;
 	display: block;
 	font-size: 24px;
 	padding: 17px;
@@ -442,7 +445,7 @@ height:44px;
 }
 
 .overlay  ul li a.facebook {
-	background-color: #ffe401;
+	background-color: $kates-yellow;
 }
 
 .overlay  ul li a.twitter {
@@ -454,7 +457,7 @@ height:44px;
 }
 
 .overlay  ul li a:hover {
-	color: #000;
+	color: $pure-black;
 }
 
 /*=========================
@@ -485,7 +488,7 @@ height:44px;
 	padding:58px 0 88px;
 	font-size:18px;
 	font-weight:300;
-	color:#4d4d4d;
+	color:$dark-grey;
 }
 
 .testimony-caption h3 {
@@ -504,7 +507,7 @@ height:44px;
 
 .testimony-caption  i {
 	font-size:60px;
-	color:#fff;
+	color:$pure-white;
 	margin-bottom:15px;
 }
 
@@ -519,7 +522,7 @@ height:44px;
 }
 
 .carousel-indicators li {
-  background-color: #FFFFFF;
+  background-color: $pure-white;
   border:none;
   border-radius: 50%;
   height: 15px;
@@ -528,7 +531,7 @@ height:44px;
 }
 
 .carousel-indicators .active {
-  background-color: #BAA802;
+  background-color: $kates-yellow;
   height: 15px;
   margin: 1px;
   width: 15px;
@@ -542,11 +545,11 @@ height:44px;
 }
 
 #portfolio .entry-header {
-	color:#fff;
+	color:$pure-white;
 }
 
 #portfolio .entry-header h2{
-	color:#ffe401;
+	color:$kates-yellow;
 }
 
 #portfolio-slider .item {
@@ -601,7 +604,7 @@ height:44px;
 }
 
 #portfolio-slider .carousel-indicators .active {
-	background-color:#ffe401
+	background-color:$kates-yellow
 }
 
 .portfolio-filter {
@@ -615,7 +618,7 @@ height:44px;
 }
 
 .portfolio-filter li a {
-	color:#b0b0b0;	
+	color:$light-grey;	
 	font-size: 24px;
 	position:relative;
 	padding:11px;
@@ -624,7 +627,7 @@ height:44px;
 .portfolio-filter li a.active:before {
 	position:absolute;
 	content:"";
-	background-color:#fde30a;
+	background-color:$kates-yellow;
 	height:3px;
 	width:100%;
 	bottom:0;
@@ -634,7 +637,7 @@ height:44px;
 .portfolio-filter li a.active:after {
 	position:absolute;
 	content:"";
-	background-color:#fca43a;
+	background-color:$kates-orange;
 	height:3px;
 	width:100%;
 	bottom:-3px;
@@ -645,7 +648,7 @@ height:44px;
 .portfolio-filter li a:active, 
 .portfolio-filter li a:focus, 
 .portfolio-filter li a.active {
-	color:#ffe401;
+	color:$kates-yellow;
 }
 
 
@@ -656,7 +659,7 @@ margin-bottom:30px;
 }
 
 .mask {
-	background-color: #000000;	
+	background-color: $pure-black;	
 	left:0;
 	top:0;
 	bottom:-100%;
@@ -666,9 +669,9 @@ margin-bottom:30px;
 }
 
 .mask a {
-	border: 10px solid #FFE401;
+	border: 10px solid $kates-yellow;
 	border-radius: 50%;
-	color: #FFE401;
+	color: $kates-yellow;
 	font-size: 30px;
 	height: 72px;
 	left:-50%;
@@ -683,14 +686,14 @@ margin-bottom:30px;
 }
 
 .mask a:hover {
-	border-color:#fff;
-	color: #fff;
+	border-color:$pure-white;
+	color: $pure-white;
 }
 
 .mask a:before {
 	position: absolute;	
 	content: "";
-	background-color: #020202;
+	background-color: $dark-grey;
 	height: 14px;
 	left: 18px;
 	top: -12px;
@@ -751,7 +754,7 @@ margin-bottom:30px;
 
 .client-left, 
 .client-right {	
-	color: #ABABAB;
+	color: $light-grey;
 	font-size: 60px;
 	position: absolute;
 	top: -13%;
@@ -759,7 +762,7 @@ margin-bottom:30px;
 
 .client-left:hover, 
 .client-right:hover {
-	color: #FFE401;
+	color: $kates-yellow;
 }
 
 .client-left {
@@ -774,7 +777,7 @@ margin-bottom:30px;
 ==========Blog CSS=========
 ===========================*/
 #blog, #portfolio {
-	background-color:#1e1e1e;
+	background-color:$dark-grey;
 	padding-bottom:85px;
 }
 
@@ -800,14 +803,14 @@ margin-bottom:30px;
 	float:left;
 	padding:36px 40px;
 	height:100%;
-	color:#333;
+	color:$dark-grey;
 	font-weight:300;
 }
 
 .entry-content  a h2 {
 	margin-top:-7px;
 	font-size:30px;
-	color:#333;
+	color:$dark-grey;
 	font-weight:400;
 	margin-bottom:17px;
 	line-height:30px;
@@ -818,15 +821,15 @@ margin-bottom:30px;
 }
 
 .entry-meta span a {
-	color:#333;
+	color:$dark-grey;
 	margin-right:18px;
 	font-size:16px;
 	font-weight:300;
 }
 
 .btn.btn-primary {
-	background-color: #1E1E1E;
-	color: #FFE401;
+	background-color: $dark-grey;
+	color: $kates-yellow;
 	display: inline-block;
 	font-size: 20px;
 	font-weight: 300;
@@ -836,27 +839,27 @@ margin-bottom:30px;
 }
 
 .btn.btn-primary:hover{
-	background-color:#2b2b2b;
-	color:#fff;
+	background-color:$dark-grey;
+	color:$pure-white;
 }
 
 .entry-meta span a:hover {
-	color:#fff;
+	color:$pure-white;
 }
 
 #blog .entry-header h2 {
-	color:#ffe401;
+	color:$kates-yellow;
 	font-weight:300;
 }
 
 #blog .entry-header {
 	padding-bottom:58px;
-	color:#fff;
+	color:$pure-white;
 }
 
 .post-date {
-	background-color: #FFE401;
-	color: #1E1E1E;
+	background-color: $kates-yellow;
+	color: $dark-grey;
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 30px;
@@ -882,22 +885,22 @@ margin-bottom:30px;
 }
 
 .contact-section {
-	background-color:#1e1e1e;
+	background-color:$dark-grey;
 	padding:40px 0;	
 }
 
 .contact-section h2 {
-	color:#FFE401;
+	color:$kates-yellow;
 	text-transform:uppercase;
 	margin-bottom:30px;
 }
 
 .form-control {
-	background-color:#fff;
-	border:1px solid #454545;
+	background-color:$pure-white;
+	border:1px solid $dark-grey;
 	font-size:18px;
 	min-height:50px;
-	color:#9f9f9f;
+	color:$light-grey;
 	
 }
 
@@ -918,14 +921,14 @@ textarea.form-control {
 }
 
 .form-control:focus {
-	border:1px solid #ffe401;
+	border:1px solid $kates-yellow;
 	box-shadow:none;
 }
 
 .btn-submit {
-	background-color: #FFE401;
+	background-color: $kates-yellow;
 	border: medium none;
-	color: #151515;
+	color: $dark-grey;
 	font-size: 18px;
 	padding: 12px 30px;
 	text-transform: uppercase;
@@ -934,11 +937,11 @@ textarea.form-control {
 }
 
 .btn-submit:hover {
-	background-color:#E9D001;
+	background-color:$kates-yellow;
 }
 
 .contact-details ul li {
-	color:#fff;
+	color:$pure-white;
 	margin-bottom:10px;
 }
 
@@ -949,19 +952,19 @@ textarea.form-control {
 
 .contact-details ul li i {
 	float:left; 
-	color:#555;
+	color:$dark-grey;
 	margin-top:5px;
 }
 
 .bottom {	
-	color:#010101;
+	color:$dark-grey;
 	padding-top:40px;	
 	padding-bottom:40px;	
 	font-size:18px;	
 }
 
 .bottom a {
-	color:#010101;
+	color:$dark-grey;
 	font-weight:600;
 }
 
@@ -1000,7 +1003,7 @@ textarea.form-control {
 ===Single Portfolio CSS====
 ===========================*/
 #single-folio {
-	color:#000;
+	color:$pure-black;
 }
 
 .single-folio-details h2{
@@ -1021,15 +1024,15 @@ textarea.form-control {
 
 #single-folio .single-folio-slide {
 	max-height: 600px;	
-	color:#000;
-	background-color:#fff;
+	color:$pure-black;
+	background-color:$pure-white;
 	margin-top:65px;
 	margin-bottom:25px;
 	position:relative
 }
 
 .portfolio-prev, .portfolio-next {
-	color: #000;
+	color: $pure-black;
 	font-size: 25px;
 	position: absolute;
 	top: 20px;
@@ -1045,7 +1048,7 @@ textarea.form-control {
 }
 
 .close-item {
-	color: #333;
+	color: $dark-grey;
 	font-size: 18px;
 	opacity: 0.6;
 	position: absolute;
@@ -1055,7 +1058,7 @@ textarea.form-control {
 
 .close-item:hover {
 	opacity:1;
-	color:#000
+	color:$pure-black
 }
 
 .project-details p {
@@ -1073,7 +1076,7 @@ textarea.form-control {
 }
 
 .tag-list li a {
-	color:#000;
+	color:$pure-black;
 }
 
 .project-details .btn.btn-primary {
@@ -1089,8 +1092,8 @@ textarea.form-control {
 }
 
 .blog-item .fa-clock-o {
-	background-color: #1e1e1e;
-	color: #ffe401;
+	background-color: $dark-grey;
+	color: $kates-yellow;
 	font-size: 44px;
 	padding:20px 22px;
 }
@@ -1121,7 +1124,7 @@ textarea.form-control {
 }
 
 .entry-header h2 {
-	color: #000;
+	color: $pure-black;
 	font-size: 36px;
 	font-weight: 300;
 	margin-bottom: 0;
@@ -1132,15 +1135,15 @@ textarea.form-control {
 .blog-content .entry-meta span a {
 	font-size:24px;
 	font-weight:300;
-	color:#666666;
+	color:$dark-grey;
 }
 
 .entry-meta span a:hover {
-	color:#000;
+	color:$pure-black;
 }
 
 .entry-post {
-  color: #000;
+  color: $pure-black;
 }
 
 .social-share {
@@ -1164,7 +1167,7 @@ textarea.form-control {
 }
 
 .author-social a {
-	color: #000;
+	color: $pure-black;
 	font-size: 16px;
 	margin-right: 25px;
 	margin-top:20px;
@@ -1179,12 +1182,12 @@ textarea.form-control {
 }
 
 .author-social a .fa-pinterest:hover {
-	color:#DF2B36;
+	color:$pintrest-hover;
 }
 
 .comments-area img, 
 .author-details img {
-	background:#f4f3f3;
+	background:$light-grey;
 	height: 75px;
 	margin-right: 25px;
 	padding: 2px;
@@ -1204,7 +1207,7 @@ textarea.form-control {
 
 .media-body h3, 
 .media-body h4  {
-  color: #000;
+  color: $pure-black;
   font-weight: 300;
   margin-top:0;
 }
@@ -1215,12 +1218,12 @@ textarea.form-control {
 }
 
 .btn-reply {
-	color:#333;
+	color:$dark-grey;
 	opacity:0.8
 }
 
 .btn-reply:hover {
-	color:#000;
+	color:$pure-black;
 	opacity:1;
 }
 
@@ -1234,7 +1237,7 @@ textarea.form-control {
 }
 
 .replay-box  .form-control {
-	border-color:#a8a8a8;
+	border-color:$light-grey;
 	min-height:48px;
 }
 
@@ -1243,20 +1246,20 @@ textarea.form-control {
 }
 
 .replay-box  .form-control:focus {
-	border-color:#ffe401;
+	border-color:$kates-yellow;
 }
 
 .replay-box .btn-submit {
   background-color: transparent;
-  border: 1px solid #ffe401;
+  border: 1px solid $kates-yellow;
   margin-top: 35px;
   padding: 10px 40px;
 }
 
 .replay-box .btn-submit:hover {
-	background-color:#333;
-	color:#fff;
-	border-color:#333;
+	background-color:$dark-grey;
+	color:$pure-white;
+	border-color:$dark-grey;
 }
 
 /*************************
@@ -1264,7 +1267,7 @@ textarea.form-control {
 **************************/
 .preloader{
   display: table;
-  background: #1e1e1e;
+  background: $dark-grey;
   z-index: 999999;
   position: fixed;
   height: 100%;
