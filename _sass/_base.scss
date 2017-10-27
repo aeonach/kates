@@ -18,7 +18,7 @@ $light-grey: 	#fafafa; /*(light backgrounds/text) */
 $dark-grey:		#333333; /*(dark backgrounds/text) */
 $pure-white: 	#ffffff;
 $pure-black:	#000000;
-$pintrest-hover: #df2b36
+$pintrest-hover: #df2b36;
 
 /*========================
 =======Typography=========
@@ -47,7 +47,7 @@ ul {
 }
 
 a {
-  color: $pure-white;
+  color: $dark-grey;
   text-decoration: none;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
@@ -136,7 +136,7 @@ height:44px;
 #navigation .navbar-right li a:hover, 
 #navigation .navbar-right li a:focus, 
 #navigation .navbar-right li.active a  {
-	color:$pure-white;	
+	color:$kates-orange;	
 }
 
 .navbar-right li.active:before {
@@ -161,7 +161,7 @@ height:44px;
 }
 
 .navbar-right li a.border:before {
-	color: $light-grey;
+	color: $pure-white;
 	content: "|";
 	font-size: 12px;
 	position:absolute;
