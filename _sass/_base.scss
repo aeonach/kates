@@ -1,24 +1,31 @@
-/*
-  Theme Name: butex
-  Theme URL: http://www.themeregion.com
-  Author: ThemeRegion
-  Author URI: http://www.themeregion.com
-  Description: Onepage Responsive HTML Template
-  Version: 2.0
-*/
+
 
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Yanone+Kaffeesatz');
 
+//========================//
+//=======Colours==========//
+//========================//
 $kates-green: 	#6fa94c;
 $kates-blue: 	#3b68af;
 $kates-purple: 	#8c5ca0;
 $kates-orange: 	#d35c2a;
 $kates-yellow: 	#f9e63b;
-$light-grey: 	#fafafa; /*(light backgrounds/text) */
-$dark-grey:		#333333; /*(dark backgrounds/text) */
+$light-grey: 	#fafafa; //(light backgrounds/text) //
+$dark-grey:		#333333; //(dark backgrounds/text) //
 $pure-white: 	#ffffff;
 $pure-black:	#000000;
 $pintrest-hover: #df2b36;
+
+/*========================
+=======Mixins=========
+==========================*/
+
+@mixin transition($duration) {
+  -webkit-transition: $duration;
+     -moz-transition: $duration;
+       -o-transition: $duration;
+          transition: $duration;
+}
 
 /*========================
 =======Typography=========
@@ -49,10 +56,7 @@ ul {
 a {
   color: $dark-grey;
   text-decoration: none;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
+  @include transition(300ms);
 }
 
 a:focus, 
