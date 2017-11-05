@@ -8,6 +8,10 @@
 	#navigation .navbar-right li a {
 		padding:25px 20px;
 	}
+	
+	#main-carousel .carousel-inner .item {
+		max-height:800px;
+	}
 	.carousel-caption {
 		left:5%;
 		right:5%;
@@ -51,6 +55,9 @@
 	}
 	.navbar-right li a.border:before {
 		top:24px;
+	}
+	#main-carousel .carousel-inner .item {
+		max-height:600px;
 	}
 	#main-carousel h2 {
 		font-size:75px;
@@ -153,6 +160,9 @@
 	}
 	.carousel-caption  .slide-info {
 		width:100%;
+	}
+	#main-carousel .carousel-inner .item {
+		max-height:500px;
 	}
 	#main-carousel h2 {
 		font-size:48px;

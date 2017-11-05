@@ -47,6 +47,18 @@ jQuery(function($) {'use strict',
 		$('#main-carousel .item').css('height',slideHeight);
 	});
 	
+	//Carousel height
+	jQuery(document).ready(function () {
+    $('#main-carousel').css({
+        'margin-top': (($('.navbar-fixed-top').height()) + 0) + 'px'
+    });
+    $(window).resize(function () {
+        $('#main-carousel').css({
+            'margin-top': (($('.navbar-fixed-top').height()) + 0) + 'px'
+        });
+    });
+});
+
 	// portfolio filter
 	$(window).load(function(){'use strict',
 		$portfolio_selectors = $('.portfolio-filter >li>a');
@@ -108,10 +120,10 @@ jQuery(function($) {'use strict',
 
 		map = new GMaps({
 			el: '#gmap',
-			lat: 43.04446,
-			lng: -76.130791,
+			lat: 54.9868848,
+			lng: -3.2618457999999464,
 			scrollwheel:false,
-			zoom: 14,
+			zoom: 16,
 			zoomControl : false,
 			panControl : false,
 			streetViewControl : false,
@@ -122,8 +134,8 @@ jQuery(function($) {'use strict',
 
 		var image = '';
 		map.addMarker({
-			lat: 43.04446,
-			lng: -76.130791,
+			lat: 54.9868848,
+			lng: -3.2618457999999464,
 			icon: image,
 			animation: google.maps.Animation.DROP,
 			verticalAlign: 'bottom',
@@ -189,7 +201,7 @@ jQuery(function($) {'use strict',
 	var cHeight=75;
 	var cTotalFrames=8;
 	var cFrameWidth=75;
-	var cImageSrc='images/sprites.gif';
+	var cImageSrc='assets/images/sprites.gif';
 	
 	var cImageTimeout=false;
 	

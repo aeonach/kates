@@ -16,9 +16,9 @@ $pure-white: 	#ffffff;
 $pure-black:	#000000;
 $pintrest-hover: #df2b36;
 
-/*========================
-=======Mixins=========
-==========================*/
+//========================//
+//=======Mixins===========//
+//========================//
 
 @mixin transition($duration) {
   -webkit-transition: $duration;
@@ -27,9 +27,9 @@ $pintrest-hover: #df2b36;
           transition: $duration;
 }
 
-/*========================
-=======Typography=========
-==========================*/
+//========================//
+//=======Typography=======//
+//========================//
 
 body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -98,17 +98,17 @@ textarea {
 .navbar-toggle {
 	margin-top:19px;
 	margin-right:20px;
-	border:1px solid $pure-white;
+	border:1px solid $dark-grey;
 }
 
 .navbar-toggle .icon-bar {
-	background-color:$pure-white;
+	background-color:$dark-grey;
 }
 
 
-/*========================
-========Home CSS==========
-==========================*/
+//========================//
+//=======Home CSS=========//
+//========================//
 
 #logo {
 height:44px;
@@ -174,7 +174,7 @@ height:44px;
 }
 
 #main-carousel  .item {
-	background-position: center top;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -241,9 +241,9 @@ height:44px;
 
 
 
-/*=========================
-========Service CSS========
-===========================*/
+//========================//
+//=======Service CSS======//
+//========================//
 
 #services {
 	background-color: $pure-white;
@@ -301,7 +301,7 @@ height:44px;
 
 .single-service:hover .single-service-icon {
 	background-color:$dark-grey;
-	color: $kates-yellow;
+	color: $kates-orange;
 }
 
 .single-service-icon, 
@@ -319,7 +319,7 @@ height:44px;
 }
 
 .single-service-icon {
-	background-color: $kates-yellow;
+	background-color: $kates-orange;
 	color: $dark-grey;
 	font-size: 72px;
 	padding: 7px 0;
@@ -343,10 +343,12 @@ height:44px;
 	font-weight:300;	
 }
 
-
-/*=========================
-========About Us CSS========
-===========================*/
+.fa.fa-angle-right.pull-left {
+color: $kates-orange;
+}
+//========================//
+//=======About CSS========//
+//========================//
 .about-bg {
 	background-color: $dark-grey;
 	height: 275px;
@@ -419,7 +421,7 @@ height:44px;
 }
 
 .single-member h3 {
-	color: $kates-orange;
+	color: $kates-purple;
 	font-size: 36px;
 	font-weight: 300;
 	text-transform:capitalize;
@@ -464,9 +466,9 @@ height:44px;
 	color: $pure-black;
 }
 
-/*=========================
-=====Testimonials CSS======
-===========================*/
+//========================//
+//=======Testimonials=====//
+//========================//
 #testimonials {
 	background-image: url("../images/testimonial/man-bg.jpg");
 	background-position: center top 250px;
@@ -535,15 +537,15 @@ height:44px;
 }
 
 .carousel-indicators .active {
-  background-color: $kates-yellow;
+  background-color: $kates-blue;
   height: 15px;
   margin: 1px;
   width: 15px;
 }
 
-/*=========================
-=======Portfolio CSS=======
-===========================*/
+//========================//
+//=======Portfolio========//
+//========================//
 #portfolio {
 	overflow:hidden;
 }
@@ -553,7 +555,7 @@ height:44px;
 }
 
 #portfolio .entry-header h2{
-	color:$kates-yellow;
+	color:$kates-green;
 }
 
 #portfolio-slider .item {
@@ -608,7 +610,7 @@ height:44px;
 }
 
 #portfolio-slider .carousel-indicators .active {
-	background-color:$kates-yellow
+	background-color:$kates-green
 }
 
 .portfolio-filter {
@@ -631,7 +633,7 @@ height:44px;
 .portfolio-filter li a.active:before {
 	position:absolute;
 	content:"";
-	background-color:$kates-yellow;
+	background-color:$kates-blue;
 	height:3px;
 	width:100%;
 	bottom:0;
@@ -722,9 +724,9 @@ margin-bottom:30px;
 	transition: all 0.6s ease-in-out;
 }
 
-/*=========================
-========Clients CSS========
-===========================*/
+//========================//
+//=======Clients==========//
+//========================//
 #clients {
 	overflow:hidden;
 }
@@ -777,9 +779,9 @@ margin-bottom:30px;
 	right:-20px;
 }
 
-/*=========================
-==========Blog CSS=========
-===========================*/
+//========================//
+//========Blog============//
+//========================//
 #blog, #portfolio {
 	background-color:$dark-grey;
 	padding-bottom:85px;
@@ -880,9 +882,9 @@ margin-bottom:30px;
 	display:block;
 }
 
-/*=========================
-========Footer CSS========
-===========================*/
+//========================//
+//=======Footer===========//
+//========================//
 
 #gmap {
 	height:550px;
@@ -1003,9 +1005,9 @@ textarea.form-control {
   z-index: 1;
 }
 
-/*=========================
-===Single Portfolio CSS====
-===========================*/
+//========================//
+//=====Single Portfolio===//
+//========================//
 #single-folio {
 	color:$pure-black;
 }
@@ -1087,9 +1089,9 @@ textarea.form-control {
 	padding:12px 25px;
 }
 
-/*=========================
-===Single Portfolio CSS====
-===========================*/
+//========================//
+//=======Blog Details=====//
+//========================//
 
 #blog-details {
 	margin-top:175px;
@@ -1266,9 +1268,9 @@ textarea.form-control {
 	border-color:$dark-grey;
 }
 
-/*************************
-*******Preloader CSS*********
-**************************/
+//========================//
+//=======Preloader========//
+//========================//
 .preloader{
   display: table;
   background: $dark-grey;
