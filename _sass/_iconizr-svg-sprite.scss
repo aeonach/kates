@@ -1,0 +1,14 @@
+// Icons from directory ""
+%icon {
+	background-repeat: no-repeat
+}
+.icon-food,
+.icon-food\:regular {
+	@extend %icon;
+	background-image: url('assets/fonts/icons/icons.svg');
+	background-position: center;
+}
+.icon-food-dims 	{
+	width: 118px;
+	height: 96px;
+}
