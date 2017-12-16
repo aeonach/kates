@@ -5,10 +5,43 @@
 .icon-food,
 .icon-food\:regular {
 	@extend %icon;
-	background-image: url('assets/fonts/icons/icons.svg');
+	background-image: url('assets/fonts/icons/food.svg');
 	background-position: center;
 }
 .icon-food-dims 	{
 	width: 118px;
 	height: 96px;
+}
+
+.icon-garden,
+.icon-garden\:regular {
+	@extend %icon;
+	background-image: url('assets/fonts/icons/garden.svg');
+	background-position: center;
+}
+.icon-garden-dims {
+	width: 118px;
+	height: 77px;
+}
+
+.icon-crafts,
+.icon-crafts\:regular {
+	@extend %icon;
+	background-image: url('assets/fonts/icons/crafts.svg');
+	background-position: center;
+}
+.icon-crafts-dims {
+	width: 118px;
+	height: 77px;
+}
+
+.icon-support,
+.icon-support\:regular {
+	@extend %icon;
+	background-image: url('assets/fonts/icons/support.svg');
+	background-position: center;
+}
+.icon-support-dims {
+	width: 118px;
+	height: 77px;
 }

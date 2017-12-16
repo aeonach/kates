@@ -102,7 +102,7 @@ textarea {
 }
 
 .navbar-toggle .icon-bar {
-	background-color:$dark-grey;
+	background-color: $kates-blue;
 }
 
 
@@ -300,7 +300,7 @@ height:44px;
 }
 
 .single-service:hover .single-service-icon {
-	background-color:$dark-grey;
+	background-color: $kates-blue;
 	color: $kates-orange;
 }
 
@@ -350,7 +350,7 @@ color: $kates-orange;
 //=======About CSS========//
 //========================//
 .about-bg {
-	background-color: $dark-grey;
+	background-color: $kates-blue;
 	height: 275px;
 	overflow: hidden;
 	position: absolute;
@@ -699,7 +699,7 @@ margin-bottom:30px;
 .mask a:before {
 	position: absolute;	
 	content: "";
-	background-color: $dark-grey;
+	background-color: $kates-blue;
 	height: 14px;
 	left: 18px;
 	top: -12px;
@@ -783,7 +783,7 @@ margin-bottom:30px;
 //========Blog============//
 //========================//
 #blog, #portfolio {
-	background-color:$dark-grey;
+	background-color: $kates-blue;
 	padding-bottom:85px;
 }
 
@@ -834,7 +834,7 @@ margin-bottom:30px;
 }
 
 .btn.btn-primary {
-	background-color: $dark-grey;
+	background-color: $kates-blue;
 	color: $kates-yellow;
 	display: inline-block;
 	font-size: 20px;
@@ -845,7 +845,7 @@ margin-bottom:30px;
 }
 
 .btn.btn-primary:hover{
-	background-color:$dark-grey;
+	background-color: $kates-blue;
 	color:$pure-white;
 }
 
@@ -891,7 +891,7 @@ margin-bottom:30px;
 }
 
 .contact-section {
-	background-color:$dark-grey;
+	background-color: $kates-blue;
 	padding:40px 0;	
 }
 
@@ -1098,7 +1098,7 @@ textarea.form-control {
 }
 
 .blog-item .fa-clock-o {
-	background-color: $dark-grey;
+	background-color: $kates-blue;
 	color: $kates-yellow;
 	font-size: 44px;
 	padding:20px 22px;
@@ -1263,7 +1263,7 @@ textarea.form-control {
 }
 
 .replay-box .btn-submit:hover {
-	background-color:$dark-grey;
+	background-color: $kates-blue;
 	color:$pure-white;
 	border-color:$dark-grey;
 }
